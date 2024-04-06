@@ -48,13 +48,33 @@
 // console.log(s);
 
 
-function isAdult(age){
-    if(age>=18){
-        return "adult";
-    }else{
-        return "not adult";
-    }
-    console.log("bye")
-}
+// function isAdult(age){
+//     if(age>=18){
+//         return "adult";
+//     }else{
+//         return "not adult";
+//     }
+//     console.log("bye")
+// }
 
-console.log(isAdult(15));
+// console.log(isAdult(15));
+
+
+
+// class3 scope 
+// let sum =54;
+
+// function calSum(a,b){
+//     //let sum =a+b    //function scope
+//     console.log(sum);
+// }
+// calSum(1,2);
+
+// console.log(sum);
+
+
+// block scope
+
+for (let i=1; i<=5 ;i++){
+    console.log(i);   //block scope
+}
