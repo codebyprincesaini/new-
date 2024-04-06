@@ -75,6 +75,21 @@
 
 // block scope
 
-for (let i=1; i<=5 ;i++){
-    console.log(i);   //block scope
-}
+// for (let i=1; i<=5 ;i++){
+//     console.log(i);   //block scope
+// }
+
+
+// lexical scope
+
+
+// function outerFunc(){
+//     let x=5;
+//     let y=6;
+//     function innerFunc(){
+//         console.log(x);     //hosting
+//         console.log(y);
+//     }
+//     innerFunc();
+// }
+// outerFunc();
