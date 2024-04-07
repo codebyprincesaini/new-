@@ -93,3 +93,70 @@
 //     innerFunc();
 // }
 // outerFunc();
+
+//function exression
+
+// let name = "prince saini";
+
+// let sum= function(a,b){
+//     return a+b;
+// }
+
+// let hello = function(){
+//     console.log("Hello");
+// };
+
+// hello = function(){
+//     console.log("namste");
+// }
+
+//higher order function
+
+
+// function multipleGreet(func, n){  // higher order function
+//     for(let i=1; i<=n; i++){
+//         func();
+//     }
+// }
+
+// let greet = function(){
+//     console.log("hello");
+// }
+// multipleGreet(greet,20);
+
+
+//return function
+
+// function oddOrEvenTest(request){
+//     if(request == "odd"){
+//         let odd= function(n){
+//             console.log(!(n%2==0));
+//         }
+//         return odd;
+//     }else if (request == "even"){
+//         let even= function(n){
+//             console.log(n%2==0);
+//         }
+//         return even;
+//     } else{
+//         console.log("wrong request");
+//     }
+// }
+
+// let request = "odd";
+
+
+//method
+
+const calculator = {
+    num: 55,
+    add: function (a,b){
+        return a+b;
+    },
+    sub: function (a,b){
+        return a-b;
+    },
+    mul: function (a,b){
+        return a*b;
+    }
+}

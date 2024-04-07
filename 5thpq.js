@@ -58,14 +58,31 @@
 
 // 6. create a function that returns the concatenation of all strings in an array
 
-let str =["hi","hello","bye","!"];
+// let str =["hi","hello","bye","!"];
 
-function concat(str){
-    let result="";
-    for(let i=0; i<str.length; i++){
-        result +=str[i];
+// function concat(str){
+//     let result="";
+//     for(let i=0; i<str.length; i++){
+//         result +=str[i];
+//     }
+//     return result;
+// }
+
+// console.log(concat(str))
+
+// 7. what will be the output
+
+let greet ="hello";   //global scope
+
+function changeGreet(){
+    let greet ="namaste";    //function scope
+    console.log(greet);
+    function innerGreet(){
+        console.log(greet);   //lexical scope
     }
-    return result;
+    innerGreet();  
 }
 
-console.log(concat(str))
+console.log(greet);
+changeGreet();   
+                        
